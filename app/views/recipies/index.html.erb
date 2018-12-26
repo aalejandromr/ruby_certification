@@ -1,0 +1,14 @@
+<table class="table">
+    <tr>
+      <td scope="col">Image</td>
+      <td scope="col">Title</td>
+      <td scope="col">Publisher</td>
+    </tr>
+    <% @recipies.each do |value| %>
+    <tr>
+        <td> <a href="<%= value["f2f_url"] %>"> <img src="<%= value["image_url"] %>">  </a>  </td>
+        <td> <a href="<%= value["f2f_url"] %>"> <%= value["title"] %> </a> </td>
+        <td> <%= value["publisher"] %> </td>
+    </tr>
+    <% end %>
+</table>
